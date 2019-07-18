@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JsonFilter": {
+      "commandName": "Project",
+      "commandLineArgs": "-s \"$[*].httpRequest.method\" -s \"$[*].httpRequest.path\" -s \"$[*].httpRequest.headers.Accept-Language[*]\" -s \"$[*].httpRequest.headers.FF-Country[*]\" -s \"$[*].httpRequest.headers.FF-Currency[*]\" -s \"$[*].httpResponse.statusCode\" -s \"$[*].httpResponse.headers.Content-Type[*]\" -s \"$[*].httpResponse.body\" < \"C:\\Workspace\\portal-slices-wishlist\\mocks\\recorded_api.json\" > \"output.json\""
+    }
+  }
+}
